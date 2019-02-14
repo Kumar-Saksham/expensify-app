@@ -1,6 +1,9 @@
 {
   "name": "expensify",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.15.0"
+  },
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -8,8 +11,10 @@
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server --mode development",
     "test": "jest --config=jest.config.json",
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "heroku-postbuild": "yarn run build:prod"
   },
+  
   "dependencies": {
     "@babel/core": "^7.2.2",
     "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
@@ -42,8 +47,7 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "uuid": "^3.3.2",
-    "webpack": "^4.29.3",
-    "heroku-postbuild": "yarn run build:prod"
+    "webpack": "^4.29.3"
   },
   "devDependencies": {
     "enzyme": "^3.8.0",
