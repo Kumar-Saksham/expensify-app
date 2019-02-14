@@ -3,3 +3,5 @@ public/bundle.js.map
 public/styles.css.map
 public/bundle.js
 public/styles.css
+.env.test
+.env.development
