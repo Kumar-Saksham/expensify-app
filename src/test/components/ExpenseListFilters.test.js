@@ -64,7 +64,7 @@ test("should handle Date change", () => {
 })
 
 test("should handle date focus changes", () => {
-    const value = 'fdsafadsfs';
+    const value = 'startDate';
     wrapper.find("DateRangePicker").prop('onFocusChange')(value);
     expect(wrapper.state('calanderFocused')).toBe(value);
 })
