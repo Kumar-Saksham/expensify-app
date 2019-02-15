@@ -11,6 +11,7 @@ import {
 import expenses from "../fixtures/expenses";
 import database from "../../firebase/firebase";
 
+const uid = 'thisisbad';
 const createMockStore = configureMockStore([thunk]);
 
 beforeEach((done) => {
@@ -18,7 +19,7 @@ beforeEach((done) => {
   expenses.forEach(({id, description, note, amount, createdAt }) => {
     expensesData[id] = { description, note, amount, createdAt };
   });
-  database.ref('expenses').set(expensesData).then(() => done());
+  database.ref(`users/${uid}/expenses`).set(expensesData).then(() => done());
 })
 
 test("should setup remove expense action object", () => {
@@ -51,7 +52,7 @@ test("should setup add expense action object with provided data", () => {
 });
 
 test("should add expense to database ans store", done => {
-  const store = createMockStore({});
+  const store = createMockStore({ auth: { uid }});
   store.dispatch(startAddExpense({ ...expenses[0] })).then(() => {
     const actions = store.getActions();
     expect(actions[0]).toEqual({
@@ -63,7 +64,7 @@ test("should add expense to database ans store", done => {
     });
 
     database
-      .ref(`expenses/${actions[0].expense.id}`)
+      .ref(`users/${uid}/expenses/${actions[0].expense.id}`)
       .once("value")
       .then(snapshot => {
         expect(snapshot.val()).toEqual({
