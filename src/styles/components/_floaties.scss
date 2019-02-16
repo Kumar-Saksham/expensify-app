@@ -1,0 +1,12 @@
+.floaty{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background: red;
+    position: fixed;
+    right: 50px;
+    box-shadow: $strong-shadow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

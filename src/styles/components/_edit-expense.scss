@@ -1,0 +1,20 @@
+.edit-expense__remove{
+    height: 150px;
+    background: $red;
+    color: $cream;
+    font-size: 40px;
+    width: 1100px;
+    margin: 0 auto;
+    box-shadow: $strong-shadow;
+    position: relative
+}
+
+.edit-expense__button-cont{
+    display: flex;
+    justify-content: center;
+}
+
+.edit-expense__remove-floaty{
+    bottom: 175px;
+    background: $red;
+}

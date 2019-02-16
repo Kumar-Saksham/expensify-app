@@ -1,10 +1,11 @@
 //colors
-$off-black: #20222b;
-$off-white: rgb(171, 186, 220);
-$dark-blue: #333745;
-$purple: #8357c5;
-$blue: #3c4251;
-$light-blue: #464b5e;
+$fresh: #afd4ce;
+$cream: #faf2e0;
+$blue: #476F7C;
+$font-color: #3B3A36;
+$mango: #ffc680;
+$red: #CF2D39;
+
 
 
 
@@ -15,3 +16,12 @@ $xl-size: 4.8rem;
 $s-size: 1.2rem;
 
 $mobile-breakpoint: 45rem;
+
+//styles
+
+$b-radius: 3px;
+
+//shadow
+
+$normal-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.10);
+$strong-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.20);

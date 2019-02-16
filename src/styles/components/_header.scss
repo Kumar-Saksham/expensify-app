@@ -1,0 +1,13 @@
+.expense-header {
+    background: $blue;
+    text-align: center;
+    font-size: 70px;
+    text-decoration: none;
+    color: $cream;
+    bottom: 50px;
+    //background: url('/images/add.svg');
+}
+
+.expense-header__to-dashboard {
+    transform: rotate(90deg);
+}

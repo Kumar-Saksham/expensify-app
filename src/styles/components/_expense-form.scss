@@ -1,0 +1,127 @@
+.expense-form {
+  background: $mango;
+  height: 700px;
+  width: 1100px;
+  box-shadow: $normal-shadow;
+  margin: 0 auto 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 100px 0;
+  border-radius: $b-radius;
+}
+
+.expense-form > * {
+  width: 800px;
+  margin: 0 auto;
+  border: none;
+  background: none;
+  border-bottom: 3px dashed #707070;
+  font-size: 30px;
+  color: $font-color;
+}
+
+.expense-form > *::placeholder {
+  color: $font-color;
+  opacity: 0.5;
+}
+
+.expense-form > *:focus {
+  outline: none ;
+  border-bottom: 3px dashed $font-color;
+}
+
+.expense-form__save-button {
+  height: 150px;
+  background: $blue;
+  color: $cream;
+  font-size: 40px;
+  width: 1100px;
+  margin: 0 auto;
+  box-shadow: $strong-shadow;
+  position: relative;
+  bottom: -100px;
+  border: none;
+}
+.expense-form__save-button:focus {
+    border: none;
+}
+
+.expense-form__error {
+  font-size: 40px;
+  background: $red;
+  color: $cream;
+  position: absolute;
+
+  width: 1100px;
+  left: 50%;
+  margin-left: -550px;
+  text-align: center;
+  top: 387px;
+  border-radius: $b-radius;
+  box-shadow: $strong-shadow;
+}
+
+.SingleDatePickerInput {
+  background: none;
+  border: none;
+}
+
+.DateInput {
+  width: 100%;
+  font-size: 30px;
+  background-color: $mango;
+}
+
+.DateInput__display-text {
+  padding: 5px 0;
+  margin: -5px -8px;
+}
+
+.DayPicker--horizontal {
+  background-color: $cream;
+}
+
+.DateInput--open-down.DateInput--with-caret::after {
+  top: 63px;
+  border-bottom-color: $cream;
+}
+
+.SingleDatePicker__picker--open-down {
+  font-size: 16px;
+}
+
+.DateInput__display-text--focused {
+  color: $font-color;
+  background-color: $mango;
+}
+
+.CalendarDay--selected-start,
+.CalendarDay--selected-end,
+.CalendarDay--selected {
+  background: #476f7c;
+  border: 1px double #fffaf0;
+  color: #faf2e0;
+}
+
+.CalendarMonthGrid {
+  background-color: $cream;
+}
+
+.transition-container {
+  box-shadow: $normal-shadow;
+}
+
+.DayPickerKeyboardShortcuts__show--bottom-right {
+  display: none;
+}
+
+.DayPickerNavigation__prev--default,
+.DayPickerNavigation__next--default {
+  background-color: $blue;
+}
+
+.DayPickerNavigation--horizontal .DayPickerNavigation__prev--default svg,
+.DayPickerNavigation--horizontal .DayPickerNavigation__next--default svg {
+  fill: #fff6ec;
+}

@@ -1,0 +1,45 @@
+.expense-list__item{
+    background: $mango;
+    width: 1000px;
+    margin: 0 auto 20px;
+    border-radius: $b-radius;
+    box-shadow: $normal-shadow;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    padding: 25px 50px;
+}
+
+.expense-list__item__amount {
+    //background: pink;
+    text-align: center;
+    align-self: center;
+}
+
+.expense-list__item__about {
+    //background: coral;
+}
+
+.expense-list__item__about > p {
+    margin: 0;
+}
+
+.expense-list__item__about__title {
+    text-decoration: none;
+    color: $font-color;
+}
+
+.expense-list__item__about__date {
+    font-size: 15px;
+    opacity: 0.5; 
+}
+
+
+.expense-list__empty-message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //background: coral;
+    height: 300px;
+    font-size: 40px;
+}

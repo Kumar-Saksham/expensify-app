@@ -1,7 +1,30 @@
 html {
-    font-family: Helvetica;
+    background: $fresh;
+}
+
+
+body{
+    font-family: 'Hiragino Kaku Gothic Std', helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: $font-color;
 }
 
 .is-active {
     font-weight: bold;
+}
+
+.page{
+    width: 1200px;
+    box-shadow: $normal-shadow;
+    background: $cream;
+    margin: 100px auto;
+    padding-bottom: 100px;
+    border-radius: 3px;
+}
+
+.page-title{
+    font-size: 60px;
+    padding: 90px 0 100px 50px;
+    margin: 0;
+
 }
